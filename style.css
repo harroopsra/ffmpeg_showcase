@@ -1,1 +1,11 @@
-
+body { 
+	font-family: serif;
+	font-size: 20x;
+	margin: 40px auto;
+	max-width: 650px; 
+	padding: 0; 
+	background-color: #fefaf4; 
+	line-height: 1.6;
+	text-align: center;
+	color: #444;
+} 
