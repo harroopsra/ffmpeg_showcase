@@ -8,16 +8,33 @@
 								initial-scale=1.0" /> 
 	<link rel="stylesheet" href="style.css" /> 
 	<title> 
-		Infinite Scrolling isn't great
+		Editing videos with ffmpeg (for cowards)
 	</title> 
 </head> 
 
 <body> 
 	<header>
-		<h1>Infinite Scrolling isn't great</h1>
-		<aside>It's really not, but the following is mostly blabber I whipped up in 5 mins, don't treat it too seriously</aside>
+		<h1>Editing videos with ffmpeg (for cowards)</h1>
+		<aside>because it can get a little scary out there</aside>
 	</header>
-	<div id="content-before-loading"></div> 
+
+	<p>FFMPEG can be used to perform a lot of the simple operations that are generally carried out using popular NLE video editing applications (like Premiere Pro). This includes cropping, trimming, adding padding(black rectangles) to get the right aspect ratios, zooming in to videos/images, applying transition effects, adding audio, adjusting the volume, exporting into different formats, etc. These are mostly the parts I'll cover in this blog since that's mostly what I messed around with.
+	</p>
+	
+	<p>Prefacing something by saying it's complex is a bad idea.<br>
+	Especially when it's not that hard.</p>
+	
+	<p>It puts learners off (like me!) because they think &quot;oh no it's probably too complex&quot;. I fiddled with MoviePy for a month before deciding it's way too slow. MoviePy is a fine abstraction, although slower because it loads each frame into memory before manipulating it. MoviePy also has its own host of issues and because of these bugs, is generally annoying to deal with. Although it was a pretty good introduction to video editing using code.</p>
+	
+	<p>I looked for countless alternatives to ffmpeg (for example using scripting with Python on free video editing software like DaVinci Resolve) before finally coming back to it.</p>
+	
+	<p>FFMPEG, on the other hand, is magic. Just like [h.264](https://sidbala.com/h-264-is-magic/).</p>
+	
+	<p>How does ffmpeg edit videos? Question to explore</p>
+	
+	<p>The difference between a simple filter graph and a complex filter graph is that the simple filter graph takes one input and has one output.<br>
+	A complex filter graph can have many inputs and many outputs.</p>
+		
 </body> 
 
 </html>
